@@ -3,7 +3,7 @@ import Filter from "./components/Filter";
 import Persons from "./components/Persons";
 import PersonForm from "./components/PersonForm";
 const App = () => {
-  let id = 4;
+  let id = 0;
   const [persons, setPersons] = useState([
     { name: "Arto Hellas", number: "040-123456", id: ++id },
   ]);
