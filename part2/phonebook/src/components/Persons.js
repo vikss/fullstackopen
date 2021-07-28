@@ -10,7 +10,11 @@ const Persons = (props) => {
               person.name.toLowerCase() === props.filter.toLowerCase()
           )
           .map((person) => (
-            <Person person={person} key={person.id}></Person>
+            <Person
+              person={person}
+              key={person.id}
+              deleteNumber={props.deleteNumber}
+            ></Person>
           ))}
       </tbody>
     </table>
